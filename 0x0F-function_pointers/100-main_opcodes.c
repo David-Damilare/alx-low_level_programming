@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
   if (argc!= 2)
     {
       printf("Error\n");
-      exit (1);
+      exit(1);
     }
 
   bytes = atoi(argv[1]);
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
   if (bytes < 0)
     {
       printf("Error\n");
-      exit (2);
+      exit(2);
     }
 
   for (idex = 0; index < bytes; index ++)
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
       printf("%.2x", opcode);
 
       if (index == bytes - 1)
-	continue;
+	 continue;
       printf(" ");
 
       address++;
